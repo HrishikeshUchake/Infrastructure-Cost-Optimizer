@@ -997,69 +997,6 @@ Create custom Azure Workbooks for specific needs:
 ./scripts/configure-monitoring.sh --refresh
 ```
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-### Development Setup
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Submit a pull request
-
-### Code Standards
-
-- Follow PowerShell best practices
-- Include comprehensive error handling
-- Add detailed logging and monitoring
-- Document all functions and parameters
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙋‍♂️ Support
-
-- 📧 Email: [support@your-domain.com](mailto:support@your-domain.com)
-- 💬 Discussions: [GitHub Discussions](https://github.com/your-repo/discussions)
-- 🐛 Issues: [GitHub Issues](https://github.com/your-repo/issues)
-- 📚 Documentation: [Project Wiki](https://github.com/your-repo/wiki)
-
-## 🏆 Acknowledgments
-
-- Azure Automation team for excellent PowerShell automation capabilities
-- Azure Monitor team for comprehensive monitoring and alerting
-- Azure Cost Management team for cost optimization APIs
-- The open-source community for continuous inspiration and contributions
-
----
-
-**Built with ❤️ for the Azure community**
-
-*Optimize costs, maximize value, automate everything!* 🚀
-az group delete --name $RESOURCE_GROUP --yes --no-wait
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For issues and questions:
-- Create an issue in this repository
-- Check the documentation in the `docs/` folder
-- Review Azure documentation for specific services
 
 ## References
 
