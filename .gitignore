@@ -1,0 +1,46 @@
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Azure CLI
+.azure/
+
+# Environment variables
+.env
+
+# PowerShell
+*.ps1xml
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build outputs
+bin/
+obj/
+
+# Test results
+TestResults/
+
+# Temporary files
+temp/
+tmp/
+
+# Runtime files
+*.pid

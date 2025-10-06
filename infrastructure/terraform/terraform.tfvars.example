@@ -1,0 +1,77 @@
+# Example Terraform Variables for AI-Driven Infrastructure Cost Optimization
+# Copy this file to terraform.tfvars and customize the values for your environment
+
+# Basic Configuration
+location              = "East US"
+resource_group_name   = "rg-costopt-prod"
+unique_suffix         = ""  # Leave empty to auto-generate
+environment          = "prod"
+notification_email   = "admin@yourcompany.com"
+
+# Budget Configuration
+monthly_budget_amount = 5000
+
+# Cost Alert Thresholds
+cost_alert_thresholds = {
+  warning_threshold  = 80   # Alert at 80% of budget
+  critical_threshold = 100  # Alert at 100% of budget
+  forecast_threshold = 100  # Alert when forecasted to exceed 100%
+}
+
+# Automation Runbook Parameters
+automation_runbook_parameters = {
+  vm_cpu_threshold      = 10   # CPU utilization threshold for VM optimization (%)
+  vm_memory_threshold   = 20   # Memory utilization threshold (%)
+  storage_access_days   = 30   # Days since last access for storage optimization
+  auto_approval_limit   = 100  # Auto-approval cost threshold (USD)
+  require_approval_limit = 500 # Manual approval cost threshold (USD)
+}
+
+# Schedule Configuration
+enable_runbook_schedules = true
+
+vm_optimization_schedule = {
+  enabled   = true
+  frequency = "Day"    # "Day" or "Week"
+  interval  = 1        # Every 1 day
+  time      = "02:00"  # 2:00 AM UTC
+  weekdays  = []       # Not used for daily schedule
+}
+
+storage_optimization_schedule = {
+  enabled   = true
+  frequency = "Week"   # "Day" or "Week"
+  interval  = 1        # Every 1 week
+  time      = "03:00"  # 3:00 AM UTC
+  weekdays  = ["Sunday"]
+}
+
+database_optimization_schedule = {
+  enabled   = true
+  frequency = "Week"   # "Day" or "Week"
+  interval  = 1        # Every 1 week
+  time      = "01:00"  # 1:00 AM UTC
+  weekdays  = ["Saturday"]
+}
+
+# Resource Configuration
+log_retention_days = 30
+daily_log_quota_gb = 10
+
+key_vault_soft_delete_retention_days = 7
+storage_account_tier                 = "Standard"
+storage_account_replication         = "LRS"
+application_insights_retention_days = 30
+
+enable_diagnostic_settings = true
+
+# Resource Tags
+resource_tags = {
+  purpose     = "cost-optimization"
+  project     = "ai-cost-optimizer"
+  team        = "platform"
+  costCenter  = "IT"
+  environment = "production"
+  owner       = "platform-team@yourcompany.com"
+  managedBy   = "terraform"
+}
