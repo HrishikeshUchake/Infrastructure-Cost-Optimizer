@@ -332,43 +332,6 @@ Access logs through:
 - Compliance with Azure security best practices
 - Regular security assessment and updates
 
-## Contributing
-
-### Development Setup
-
-1. Fork the repository
-2. Create a feature branch
-3. Install development dependencies
-4. Run local tests before submitting
-
-### Code Standards
-
-- Follow PowerShell best practices and style guide
-- Include comprehensive error handling
-- Add appropriate logging and monitoring
-- Document all configuration parameters
-
-### Testing
-
-Run the validation suite:
-
-```bash
-./scripts/validate-deployment.sh --test-mode
-```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-For issues and questions:
-
-1. Check the troubleshooting section
-2. Review Azure documentation
-3. Submit an issue with detailed error logs
-4. For urgent production issues, contact your Azure support team
-
 ## Changelog
 
 ### Version 1.0.0
@@ -996,7 +959,6 @@ Create custom Azure Workbooks for specific needs:
 # Refresh monitoring configuration
 ./scripts/configure-monitoring.sh --refresh
 ```
-
 
 ## References
 
