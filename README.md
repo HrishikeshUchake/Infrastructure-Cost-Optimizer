@@ -116,4 +116,4 @@ scripts/         Setup, deployment, monitoring, and validation scripts
 docs/            Supporting project documentation
 ```
 
-See [CHANGELOG.md](CHANGELOG.md) for release history.
+Work in progress...
